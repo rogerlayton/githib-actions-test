@@ -8,10 +8,9 @@ jobs:
     steps:
       - name: Simple JS Actions
         id: greet
-        uses: actions/hello-world-javascript-action@V1
+        uses: actions/hello-world-javascript-action
         with:
           who-to-greet: Roger
       - name: Log greeting time
         run: "${{ steps.greet.outputs.time}}"
-
-
+        
